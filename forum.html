@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Q&A forum</title>
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/forum.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Roboto Font Link -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body onload="ready()">
+    <!-- PreLoader -->
+   
+    
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand nav-item active" href="index.html"><img src="img/logo.png" alt="logo">
+        <span class="sr-only">(current)</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Tutorials
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="htmlCourse.html">HTML</a>
+              <a class="dropdown-item" href="cssCourse.html">CSS</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">JavaScript</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forum.html">Q&A Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="library.html">Library</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" target="_blank" href="playground.html">Web Playground</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="flashcards.html">Flashcards</a>
+          </li>
+        </ul>
+        <ul class="ml-auto navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/channel/UCURY4RZois483CPY8prhx7g"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://play.google.com/store/apps/details?id=com.studytonight.app"><i class="fa fa-android fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a id="button" class="nav-link button" href="#">Sign in</a>
+          </li>
+        </ul>
+        
+      </div>
+    </nav>
+  </header>
+
+  <section class="title">
+    <div class="heading text-center"><h2>Studyroom</h2></div>
+    <div class="sub-heading">
+      <p class="text-center">We're a community of Students sharing knowledge by asking Questions and answering them in our space.</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="img/forum-1.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Type Of Relevant Education and Why is it Important to Learn Programming Languages?</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/forum-2.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some Useful Concepts that Every Python Programmer Should Know</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/forum-3.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">How To Download Any Programming Book For Free
+              <p class="card-text"><small class="text-muted">Last updated  10 hours ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/forum-4.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Service Transition and Operational Readiness: All You Need to Know</p>
+              <p class="card-text"><small class="text-muted">Last updated 1 day ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+      <section class="ask text-center">
+        <div class="container">
+          <h1>Ask a Question?</h1>
+           <form class="form-inline row justify-content-center">        
+              <input  id="subject" class="input col-12 col-md-4" type="text" placeholder="Subject" required>                         
+              <textarea id="description" class="input col col-12 col-md-4" type="text" placeholder="Describe your question in detail.."></textarea>            
+              <button id="add" class="btn btn-primary col-12 col-md-3">Add</button>
+          </form>
+        </div>
+      </section>
+       <section class="answers">
+          <div class="container test">
+            <div class="row question justify-content-between align-items-center">
+              <div class="img col-2">
+                <img class="rounded-circle" src="img/default-profile.png" alt="">
+              </div>
+              <div class="col-6">
+                <h4>How to write a program that draws a sine wave across the screen?</h4>
+                <a href="#details" data-toggle="collapse" class="details" role="button" aria-expanded="false" aria-controls="details">Details...</a>
+                <div class="collapse" id="details">
+                    <div class="card card-body">
+                        <p>Does anyone know How to write a program that draws a sine wave across the screen using C language</p>
+                    </div>
+                    <div class="answer">
+                      <h3>Answers</h3>
+                      <textarea name="actualanswer" id="actualanswer" rows="8" style="width: 100%">
+#include <stdio.h> 
+void printSinWave(int wave_height, int wave_length) 
+{ 
+	// inner space and outer space. 
+int is = 1, os = 2; 
+	// for loop for height of wave 
+	for (int i = 1; i <= wave_height; i++) { 
+		// for loop for wave length 
+		for (int j = 1; j <= wave_length; j++) { 
+			// intermediate spaces 
+			for (int k = 1; k <= os; k++) { 
+			printf(" "); 
+			} 
+		// put any symbol 
+			printf("0"); 
+			for (int k = 1; k <= is; k++) 
+				printf(" ");			 
+			// put any symbol 
+			printf("0"); 
+			for (int k = 1; k <= os; k++) 
+				printf(" "); 
+			printf(" "); 
+		} 
+		// set a value of os to 1 if i+1 is not 
+		// equal to wave height or 0 otherwise 
+		os = (i + 1 != wave_height); 
+		// set value of is to 3 if i+1 is not equal 
+		// to wave height or 5 oterwise 
+		is = (i + 1 != wave_height) ? 3 : 5; 
+		printf("n"); 
+	} 
+} 
+// Driver code 
+int main() 
+{ 
+	int wave_height = 5, wave_length = 10; 
+	printSinWave(wave_height, wave_length); 
+	return 0; 
+} 
+                     </textarea>
+                    </div>
+                  </div>
+              </div>
+              <div class="col-3 text-right">
+                <button type="button" class="btn answer-btn btn-success" data-toggle="modal" data-target="#answerbox">Answer</button>
+              </div>
+            </div>
+          </div>
+      </section>
+        
+  
+  <!-- Modal -->
+      <div class="modal fade" id="answerbox" tabindex="-1" role="dialog" aria-labelledby="answerbox" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">What is your answer?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <textarea name="answer" id="answertext" cols="47" rows="10" class="answertext"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" id="submitanswer" class="btn btn-primary">Submit Answer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <div>
+        <h4>Made with <i class="fa fa-heart fa-1x" aria-hidden="true"></i> by 0000####</h4>
+        <p>This web site was created to fulfill Web Technologies module’s requirements and does not represent actual company or service. All the content and Images are borrowed from https://studytonight.com</p>
+      </div>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <ul class="nav navbar-nav ">
+            <li class="nav-item dropup">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tutorials
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="htmlCourse.html">HTML</a>
+                <a class="dropdown-item" href="cssCourse.html">CSS</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascriptCourse.html">JavaScript</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html">Q&A Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tests.html">Tests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="library.html">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="flashcards.html">Flashcards</a>
+            </li>
+          </ul>          
+      </nav>
+    </div>
+  </footer>
+
+  <div class="bg-modal">
+      <div class="modal-contents">
+    
+        <div class="close">+</div>
+        <img src="img/logo.png" alt="">
+    
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="E-Mail">
+          <a href="#" class="button btn btn-primary">Submit</a>
+        </form>
+    
+      </div>
+    </div>
+
+  <!-- Bootstrap Javascript Links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/forum.js"></script>
+</body>
+</html>

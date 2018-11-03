@@ -1,0 +1,29 @@
+section.ask{
+  background: #f7832d;
+  padding: 20px 0;
+}
+
+.ask input, .ask textarea{
+  height: 50px;
+  padding: 10px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #efefef;
+  margin-right: 20px;
+}
+
+.answers .container{
+  background: #FFFAF0;
+  margin: 30px auto;
+  padding: 20px; 
+}
+.question{
+  border-bottom: 2px solid #999;
+  padding: 30px 0;
+}
+.question img{
+  height: 80px;
+}
+input:focus, textarea:focus{
+  background: #efefef;
+}

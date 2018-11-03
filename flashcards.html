@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flashcards</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+
+  <!-- Roboto Font Link -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+    <!-- PreLoader -->
+    <div class="js"><div id="preloader"></div></div>
+    
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand nav-item active" href="index.html"><img src="img/logo.png" alt="logo">
+            <span class="sr-only">(current)</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Tutorials
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="htmlCourse.html">HTML</a>
+                  <a class="dropdown-item" href="cssCourse.html">CSS</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">JavaScript</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="forum.html">Q&A Forum</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="library.html">Library</a>
+                </li>
+              <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="playground.html">Web Playground</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="flashcards.html">Flashcards</a>
+              </li>
+            </ul>
+            <ul class="ml-auto navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.youtube.com/channel/UCURY4RZois483CPY8prhx7g"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://play.google.com/store/apps/details?id=com.studytonight.app"><i class="fa fa-android fa-2x" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a id="button" class="nav-link button" href="#">Sign in</a>
+              </li>
+            </ul>
+            
+          </div>
+        </nav>
+      </header>
+
+  <section class="title">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 text" >
+        <h2>Studytonight <span style="color: #f7832d"> FlashCards</span></h2>
+        <p>Best Question Answers set, with a better Approach and unique Learning Experience for Interview Preparations.</p>
+        </div>
+        <div class="col-8 col-md-4">
+          <img src="img/flashcards.png" alt="flashcards" style="width: 120px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8 col-md-6 col-lg-4">
+          <div class="box-header text-center" style="background: #fc6042; padding: 30px">
+            <img src="img/java-white.png" alt="java">
+          </div>
+          <div class="box-desc">
+            <h3>Core Java</h3>
+            <span class="text-muted">
+              <i class="fa fa-eye" aria-hidden="true"></i> 448.0 k views
+            </span>
+          </div>
+        </div>
+        <div class="col-8 col-md-6 col-lg-4">
+            <div class="box-header text-center" style="background: #5fcf80; padding: 30px">
+              <img src="img/hrexec.png" alt="HR internview" style="width: 48px">
+            </div>
+            <div class="box-desc">
+              <h3>HR Interview</h3>
+              <span class="text-muted">
+                <i class="fa fa-eye" aria-hidden="true"></i> 337.3 k views
+              </span>
+            </div>
+        </div>
+        <div class="col-8 col-md-6 col-lg-4">
+            <div class="box-header text-center" style="background: #6a67ce; padding: 30px">
+              <img src="img/dbms.png" alt="java">
+            </div>
+            <div class="box-desc">
+              <h3>DBMS & SQL</h3>
+              <span class="text-muted">
+                <i class="fa fa-eye" aria-hidden="true"></i> 403.7 k views
+              </span>
+            </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+          <div class="col-8 col-md-6 col-lg-4">
+            <div class="box-header text-center" style="background: #43353d; padding: 30px">
+              <img src="img/os-white.png" alt="java">
+            </div>
+            <div class="box-desc">
+              <h3>Operating System</h3>
+              <span class="text-muted">
+                <i class="fa fa-eye" aria-hidden="true"></i> 270.3 k views
+              </span>
+            </div>
+          </div>
+          <div class="col-8 col-md-6 col-lg-4">
+              <div class="box-header text-center" style="background: #ffea00; padding: 30px">
+                <img src="img/cpp-white.png" alt="HR internview">
+              </div>
+              <div class="box-desc">
+                <h3>C++</h3>
+                <span class="text-muted">
+                  <i class="fa fa-eye" aria-hidden="true"></i> 558.8 k views
+                </span>
+              </div>
+          </div>
+          <div class="col-8 col-md-6 col-lg-4">
+              <div class="box-header text-center" style="background: #00e5ff; padding: 30px">
+                <img src="img/cn-white.png" alt="java">
+              </div>
+              <div class="box-desc">
+                <h3>Computer Networks</h3>
+                <span class="text-muted">
+                  <i class="fa fa-eye" aria-hidden="true"></i> 137.9 k views
+                </span>
+              </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <div>
+        <h4>Made with <i class="fa fa-heart fa-1x" aria-hidden="true"></i> by 0000####</h4>
+        <p>This web site was created to fulfill Web Technologies module’s requirements and does not represent actual company or service. All the content and Images are borrowed from https://studytonight.com</p>
+      </div>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+          <ul class="nav navbar-nav ">
+            <li class="nav-item dropup">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tutorials
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="htmlCourse.html">HTML</a>
+                <a class="dropdown-item" href="cssCourse.html">CSS</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="javascriptCourse.html">JavaScript</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forum.html">Q&A Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tests.html">Tests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="library.html">library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="flashcards.html">Flashcards</a>
+            </li>
+          </ul>          
+      </nav>
+    </div>
+  </footer>
+
+  <div class="bg-modal">
+      <div class="modal-contents">
+    
+        <div class="close">+</div>
+        <img src="img/logo.png" alt="">
+    
+        <form action="">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="E-Mail">
+          <a href="#" class="button btn btn-primary">Submit</a>
+        </form>
+    
+      </div>
+    </div>
+
+  <!-- Bootstrap Javascript Links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
