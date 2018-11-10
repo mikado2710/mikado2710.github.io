@@ -31,6 +31,7 @@ btn_add.addEventListener('click', (event) => {
 
 function addQuestion(question) {
     questions.push(question);
+    // creating html elements
     let divquestion = document.createElement('div'),
         divimg = document.createElement('div'),
         imguser = document.createElement('img'),
@@ -41,7 +42,9 @@ function addQuestion(question) {
         divcardbody = document.createElement('div'),
         pdetails = document.createElement('p'),
         divcol3 = document.createElement('div'),
-        buttonAnswer = document.createElement('button')
+        buttonAnswer = document.createElement('button'),
+        divanswer = document.createElement('div'),
+        h3answers = document.createElement('h3')
 
         // Helper Function to set attributes
         function setAttributes(el, attrs) {
@@ -49,7 +52,7 @@ function addQuestion(question) {
               el.setAttribute(key, attrs[key]);
         }
         }
-    
+    // Setting attributes to created elements
     setAttributes(divquestion, {"class": "row question justify-content-between align-items center"});
     setAttributes(divimg, {"class": "img col-2"});
     setAttributes(imguser, {"class": "rounded-circle", "src": "img/default-profile.png"});
@@ -59,12 +62,16 @@ function addQuestion(question) {
     setAttributes(divcardbody, {"class": "card-body card"});
     setAttributes(divcol3, {"class": "col-3 text-right"});
     setAttributes(buttonAnswer, {"type": "button", "class": "btn btn-success answer-btn", "data-toggle": "modal", "data-target": "#answerbox"});
+    setAttributes(divanswer, {"class": "answer"});
 
+    // adding content 
     h4subject.innerText = question.subject;
     pdetails.innerText = question.description;
     buttonAnswer.innerText = "Answer";
-    details.innerText = "Details..."
+    details.innerText = "Details...";
+    h3answers.innerText = "Answers";
 
+    // Appending child/nesting created elements 
     container.appendChild(divquestion);
     divquestion.appendChild(divimg);
     divquestion.appendChild(divcol6);
@@ -77,10 +84,13 @@ function addQuestion(question) {
     divcol6.appendChild(divcollapse);
 
     divcollapse.appendChild(divcardbody);
+    divcollapse.appendChild(divanswer);
+    divanswer.appendChild(h3answers)
 
     divcardbody.appendChild(pdetails);
 
     divcol3.appendChild(buttonAnswer);
+
 };
 
 var btn_submit = document.getElementById("submitanswer");
@@ -93,13 +103,13 @@ var answers = [];
 btn_submit.addEventListener('click', (event) => {
     event.preventDefault();
     
-    if (required[i].value === '') {
-        alert('Please fill all the required fields!');        return;
+    if (answertext.value === '') {
+        alert('Please fill all the required fields!');        
+        return;
     }
     addAnswer({
         answertext: answertext.value,
     });
-    answerform.reset();
 });
 
 function addAnswer(answer){
@@ -108,8 +118,6 @@ function addAnswer(answer){
     let divanswer = document.createElement('div'),
         answersheading = document.createElement('h3')
         textareaAnswer = document.createElement('textarea');
-
-        li.setAttribute('class', 'list-item');
 
         divanswer.setAttribute('class', 'answer');
         textareaAnswer.setAttribute('name', 'actualanswer');
